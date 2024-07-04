@@ -19,10 +19,13 @@ body {
 
 .logo {
     height: 60px;
+    padding-right: 12px;
 }
 
 .profile {
-    display: flex;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
     gap: 13px;
 }
 
@@ -40,7 +43,6 @@ body {
 .profile > .text {
     font-size: 17px;
     font-weight: 400;
-    
     color: #646677;
 }
 
@@ -53,11 +55,50 @@ body {
 .search > .line {
     width: 3px;
     height: 40px;
+
     background-color: #f7f8f9;
 }
 
 .search > .search-icon {
     /* font-size: 20px; */
-    color: #646677;
-    height: 30px;
+    fill: #646677;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.search > .search-input {
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+}
+
+.search > .search-input::placeholder {
+    color: #CBD0D3;
+    font-weight: 100;
+}
+
+.rest {
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.rest > .container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/ 3)
+}
+
+.rest > .container > .title {
+    width: 100%;
+    font-size: 25px;
+}
+
+.rest > .container > .card {
+    
+    background-color: #ffffff;
+    margin: 20px 0;
+    margin-right: 40px;
+    height: 300px;
 }
